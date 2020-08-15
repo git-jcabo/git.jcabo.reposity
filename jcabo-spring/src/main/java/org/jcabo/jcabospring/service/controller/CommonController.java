@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommonController {
 
     // 日志组件
-    private Logger logger = LoggerFactory.getLogger(CommonController.class);
+    private static final Logger logger = LoggerFactory.getLogger(CommonController.class);
 
     @RequestMapping("/test01")
     public String testController() throws Exception{
